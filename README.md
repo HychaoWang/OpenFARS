@@ -21,29 +21,6 @@
 - **📊 多维量化评估**: 基于 **新颖性 (Novelty)**、**可行性 (Feasibility)**、**重要性 (Significance)**、**清晰度 (Clarity)**、**相关性 (Relevance)** 五个维度进行打分。
 - **📝 完整提案生成**: 最终输出包含摘要、背景、方法、实验设计等完整章节的研究提案报告。
 
-## 🏗️ 系统架构
-
-```mermaid
-graph TD
-    User[用户输入: 研究方向] --> Search[Arxiv 检索 (RAG)]
-    Search --> Generator[Idea 生成器]
-    Generator --> |初步 Ideas| Review{多智能体评审}
-    
-    subgraph Multi-Agent Review
-        Review --> Critic[Reviewer A: 保守派]
-        Review --> Innovator[Reviewer B: 激进派]
-        Critic --> Meta[Meta Reviewer: 领域主席]
-        Innovator --> Meta
-    end
-    
-    Meta --> |评分 & 意见| Decision{是否达标?}
-    
-    Decision --> |❌ 未达标| Refiner[Idea 优化器]
-    Refiner --> |优化后的 Idea| Review
-    
-    Decision --> |✅ 达标| Report[最终报告生成器]
-    Report --> Output[输出: Markdown 报告]
-```
 
 ## 🚀 快速开始
 
