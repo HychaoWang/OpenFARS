@@ -47,7 +47,7 @@ class ResearchIdeaAgent:
         # 使用 MultiReviewer 替换原来的 IdeaEvaluator
         self.evaluator = MultiReviewer(self.client)
         self.refiner = IdeaRefiner(self.client)
-        self.knowledge_base = KnowledgeBase()
+        self.knowledge_base = KnowledgeBase(client=self.client)
 
         # 存储运行历史
         self.ideas_history: list[dict] = []

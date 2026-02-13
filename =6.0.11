@@ -1,0 +1,33 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting feedparser
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/4e/eb/c96d64137e29ae17d83ad2552470bafe3a7a915e85434d9942077d7fd011/feedparser-6.0.12-py3-none-any.whl (81 kB)
+Collecting arxiv
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/11/63/9e71153b2d48c98f8079c90d7211bc65515cc1ad18c3328c3c0472e68f44/arxiv-2.4.0-py3-none-any.whl (12 kB)
+Collecting sgmllib3k (from feedparser)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/9e/bd/3704a8c3e0942d711c1299ebf7b9091930adae6675d7c8f476a7ce48653c/sgmllib3k-1.0.0.tar.gz (5.8 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting requests~=2.32.0 (from arxiv)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl (64 kB)
+Requirement already satisfied: charset_normalizer<4,>=2 in /mnt/hbnas/home/whc/miniconda3/envs/kb/lib/python3.12/site-packages (from requests~=2.32.0->arxiv) (3.4.3)
+Requirement already satisfied: idna<4,>=2.5 in /mnt/hbnas/home/whc/miniconda3/envs/kb/lib/python3.12/site-packages (from requests~=2.32.0->arxiv) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /mnt/hbnas/home/whc/miniconda3/envs/kb/lib/python3.12/site-packages (from requests~=2.32.0->arxiv) (1.26.20)
+Requirement already satisfied: certifi>=2017.4.17 in /mnt/hbnas/home/whc/miniconda3/envs/kb/lib/python3.12/site-packages (from requests~=2.32.0->arxiv) (2025.8.3)
+Building wheels for collected packages: sgmllib3k
+  Building wheel for sgmllib3k (pyproject.toml): started
+  Building wheel for sgmllib3k (pyproject.toml): finished with status 'done'
+  Created wheel for sgmllib3k: filename=sgmllib3k-1.0.0-py3-none-any.whl size=6091 sha256=5b5f1365b2b20a712201d8f9afea0dcb5533f49526fdc7db619787bcbff99a34
+  Stored in directory: /home/whc/.cache/pip/wheels/4f/48/8e/790492080c5e85ff08704e66c6e1cc9bd96ac391bb890426bf
+Successfully built sgmllib3k
+Installing collected packages: sgmllib3k, requests, feedparser, arxiv
+  Attempting uninstall: requests
+    Found existing installation: requests 2.28.2
+    Uninstalling requests-2.28.2:
+      Successfully uninstalled requests-2.28.2
+
+
+Successfully installed arxiv-2.4.0 feedparser-6.0.12 requests-2.32.5 sgmllib3k-1.0.0
