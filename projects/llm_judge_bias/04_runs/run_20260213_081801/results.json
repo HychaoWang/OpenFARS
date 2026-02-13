@@ -1,0 +1,21 @@
+{
+  "run_id": "run_20260213_081801",
+  "hypothesis_id": "H1_prompt_normalization",
+  "plan_id": "plan_H1_v0",
+  "metrics": {
+    "baseline_accuracy": 0.73,
+    "normalized_accuracy": 0.755,
+    "bias_gap_verbose_vs_concise": 0.05
+  },
+  "decision_trace": [
+    "baseline judge evaluated first 200 GSM8K samples (simulated)",
+    "applied normalization prompt step_extractor_v1 (simulated)",
+    "evaluated normalized answers with rubric gsm8k_math_rubric_v1 (simulated)"
+  ],
+  "cost": {
+    "token_usage": 120000,
+    "compute_hours": 1.2
+  },
+  "status": "success",
+  "mode": "simulation"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "H1_prompt_normalization",
+    "motivation": "LLM judges over-score verbose answers and under-score concise but correct GSM8K solutions.",
+    "statement": "Normalizing student answers into structured steps before judging reduces verbosity bias and improves agreement with gold labels by at least 2%.",
+    "expected_gain": "Higher agreement on concise answers without hurting verbose answers.",
+    "metrics": [
+      {"name": "accuracy", "type": "primary", "target": ">= baseline +2%"},
+      {"name": "bias_gap_verbose_vs_concise", "type": "secondary", "target": "<= baseline gap"}
+    ],
+    "mvp": {
+      "dataset": "GSM8K 200-sample stratified by answer length",
+      "procedure": "Generate normalized reasoning steps with a small prompt, then ask judge for pass/fail with rubric.",
+      "sample_size": 200
+    },
+    "failure_conditions": [
+      "Accuracy does not improve or worsens on concise answers",
+      "Token usage exceeds 200k",
+      "No reproducible seed/config captured"
+    ],
+    "budget": {"token_limit": 200000, "compute_hours": 4},
+    "notes": "Start with a single normalization prompt; expand only if stable."
+  }
+]

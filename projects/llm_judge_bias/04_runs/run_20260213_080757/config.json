@@ -1,0 +1,55 @@
+{
+  "id": "plan_H1_v0",
+  "hypothesis_id": "H1_prompt_normalization",
+  "datasets": [
+    "GSM8K_subset_200"
+  ],
+  "models": [
+    "gpt-judge-baseline",
+    "gpt-judge-normalized"
+  ],
+  "variables": [
+    {
+      "name": "normalization_prompt",
+      "values": [
+        "step_extractor_v1"
+      ]
+    },
+    {
+      "name": "rubric",
+      "values": [
+        "gsm8k_math_rubric_v1"
+      ]
+    }
+  ],
+  "controls": [
+    "baseline_judge_prompt_v0"
+  ],
+  "metrics": [
+    {
+      "name": "accuracy",
+      "aggregation": "mean",
+      "stat_test": "bootstrap_ci"
+    },
+    {
+      "name": "bias_gap_verbose_vs_concise",
+      "aggregation": "mean_diff",
+      "stat_test": "bootstrap_ci"
+    }
+  ],
+  "ablations": [
+    "judge_without_normalization",
+    "judge_with_short_prompt"
+  ],
+  "budget": {
+    "max_runs": 3,
+    "max_compute_hours": 4,
+    "max_token_usage": 200000
+  },
+  "retry_policy": {
+    "max_retries": 2,
+    "on_oom": "reduce_batch",
+    "on_nan": "lower_lr_or_clip"
+  },
+  "notes": "Start with CPU/local inference mocks; later plug real API."
+}

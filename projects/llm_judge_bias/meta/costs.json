@@ -1,0 +1,38 @@
+[
+  {
+    "run_id": "run_20260213_080757",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:07:57.729487"
+  },
+  {
+    "run_id": "run_20260213_080806",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:08:06.545923+00:00"
+  },
+  {
+    "run_id": "run_20260213_080855",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:08:55.331600+00:00"
+  },
+  {
+    "run_id": "run_20260213_081506",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:15:06.592868+00:00"
+  },
+  {
+    "run_id": "run_20260213_081801",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:18:01.046632+00:00"
+  },
+  {
+    "run_id": "run_20260213_082426",
+    "token_usage": 120000,
+    "compute_hours": 1.2,
+    "timestamp": "2026-02-13T08:24:26.423895+00:00"
+  }
+]
