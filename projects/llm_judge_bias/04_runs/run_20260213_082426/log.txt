@@ -1,7 +1,0 @@
-Run run_20260213_082426
-Simulated execution for MVP experiment.
-Metrics: {
-  "baseline_accuracy": 0.73,
-  "normalized_accuracy": 0.755,
-  "bias_gap_verbose_vs_concise": 0.05
-}

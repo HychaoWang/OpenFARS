@@ -1,3 +1,0 @@
-{"problem": "If John has 5 apples and buys 3 more, how many apples does he have?", "gold": "8", "concise_answer": "8", "verbose_answer": "John starts with five apples, buys three more, so he ends with eight apples."}
-{"problem": "A bag has 12 candies. If you eat 4, how many remain?", "gold": "8", "concise_answer": "8", "verbose_answer": "There were twelve candies and four were eaten, leaving eight."}
-{"problem": "Tom had 9 books and gave 2 to a friend. How many are left?", "gold": "7", "concise_answer": "7", "verbose_answer": "Tom originally had nine books, gave away two, so seven remain."}
